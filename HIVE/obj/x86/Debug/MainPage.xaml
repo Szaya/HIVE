@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="HIVE.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HIVE"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='2' x:Name="BaseGrid" Background="DodgerBlue">
+        <Border Background="SteelBlue" Margin="100,0,100,100">
+            <Grid x:ConnectionId='6'  x:Name="GameBoardGrid" Background="LightSteelBlue" Margin="5,0,5,5"/>
+        </Border>
+        <Border Background="SteelBlue" Margin="0,0,0,100" HorizontalAlignment="Left" Width="100">
+            <Grid x:ConnectionId='5'  x:Name="WhitePlayerElementsGrid" Background="LightSkyBlue" Margin="0,0,0,5"/>
+        </Border>
+        <Border Background="SteelBlue" Margin="0,0,0,100" HorizontalAlignment="Right" Width="100">
+            <Grid x:ConnectionId='4'  x:Name="BlackPlayerElementsGrid" Background="LightSkyBlue" Margin="0,0,0,5"/>
+        </Border>
+        <Border Background="SteelBlue" Margin="0,0,0,35" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200" Height="40">
+            <Button x:ConnectionId='3' Content="Restart" Padding="5,5,5,5"               Background="White" HorizontalAlignment="Center" Width="190" Height="30"/>
+        </Border>
+    </Grid>
+</Page>
+
